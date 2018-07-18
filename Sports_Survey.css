@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+}
+
+/* Thanks to wpclipart.com for the background image */
+body {
+  background-image: url("https://www.wpclipart.com/page_frames/sports/sports_background_page.png");
+  color: #091034;
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1em;
+}
+
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+}
+
+#title {
+  text-align: center;
+}
+
+.wrap {
+  box-shadow: 0 0 20px 0 #a2843f;
+}
+
+.wrap > *{
+  padding: 1em;
+}
+
+.wrapmaincontainer{
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  width: 100%;
+  border:1px solid #FBA90A;
+}
+
+.wrapmaincontainer1{
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  width: 100%;
+  border:1px solid #FBA90A;
+  background-color: white;
+}
+
+.wrapmain{
+  display: grid;
+  grid-row-gap: 0.5em;
+  }
+
+.columngrid{
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+} 
+
+.container1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px;
+  }
+
+
+.container1 div, .container2 div {
+  padding: 0.2em;
+}
+
+.container1-box{
+  flex:1;
+}
+
+/* STETICS & COLORS */
+
+h4 {
+  color: #1430B8;
+}
+
+.black {
+  color: #091034;
+}
+span {
+  color: #183BF0
+  ;
+}
+.orange{
+  color: #FBA90A
+}
+
+#esbox {
+  background-color: #FBA90A;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.mainbox {
+  background: #F6F2EA;
+}
+
+.mainbox form textarea {
+  width: 75%;
+  padding: 1em;
+  border:1px solid #FBA90A;
+  margin-bottom: 1em
+}
+
+.mainbox form button {
+  width: 30%;
+  padding: 0.8em;
+  border: none;
+  background-color: #FBA90A;
+  font-weight: bold;
+}
+
+.mainbox form button:hover {
+  background: #1430B8;
+  color: #fff;
+  outline:0;
+  transition: background-color s ease-out;
+}
+
+#dropdown {
+  width: 50%;
+  padding: 0.5em;
+  border:1px solid #FBA90A;
+}
+
+#name, #email, #number {
+  width: 100%;
+  padding: 0.5em;
+  border:1px solid rgb(204, 214, 224);
+  justify-self: flex-start;
+}
+
+#name-label, #email-label, #number-label {
+  justify-self: flex-start;
+}
+
+.my_signature{
+  color:#00308F;
+  font-family:Orbitron;
+  font-weight:bold;
+}
