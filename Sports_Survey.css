@@ -1,20 +1,21 @@
-*{
+* {
   box-sizing: border-box;
   text-align: center;
   align-items: center;
 }
 
 /* Thanks to wpclipart.com for the background image */
+
 body {
   background-image: url("https://www.wpclipart.com/page_frames/sports/sports_background_page.png");
   color: #091034;
   line-height: 1.6;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 1em;
+  padding: 3em;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 50em;
   margin-left: auto;
   margin-right: auto;
   padding: 2em;
@@ -28,54 +29,49 @@ body {
   box-shadow: 0 0 20px 0 #a2843f;
 }
 
-.wrap > *{
+.wrap>* {
   padding: 1em;
 }
 
-.wrapmaincontainer{
-  max-width: 75%;
+.wrapmaincontainer {
+  max-width: 85%;
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
   width: 100%;
-  border:1px solid #FBA90A;
+  border: 1px solid #FBA90A;
 }
 
-.wrapmaincontainer1{
-  max-width: 50%;
+.wrapmaincontainer1 {
+  max-width: 60%;
   margin-left: auto;
   margin-right: auto;
-  padding: 1em;
-  width: 100%;
-  border:1px solid #FBA90A;
+  padding: 0.5em;
+  border: 1px solid #FBA90A;
   background-color: white;
+  display: flex;
+  justify-content: center;
 }
 
-.wrapmain{
-  display: grid;
-  grid-row-gap: 0.5em;
-  }
-
-.columngrid{
+.columngrid {
   display: flex;
   grid-template-columns: 1fr 1fr;
-  justify-content: center;
-} 
+}
 
-.container1{
+.container1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 5px;
-  }
+  padding: 0.5em;
+}
 
-
-.container1 div, .container2 div {
+.container1 div,
+.container2 div {
   padding: 0.2em;
 }
 
-.container1-box{
-  flex:1;
+.container1-box {
+  flex: 1;
 }
 
 /* STETICS & COLORS */
@@ -87,11 +83,12 @@ h4 {
 .black {
   color: #091034;
 }
+
 span {
-  color: #183BF0
-  ;
+  color: #183BF0;
 }
-.orange{
+
+.orange {
   color: #FBA90A
 }
 
@@ -109,7 +106,7 @@ span {
 .mainbox form textarea {
   width: 75%;
   padding: 1em;
-  border:1px solid #FBA90A;
+  border: 1px solid #FBA90A;
   margin-bottom: 1em
 }
 
@@ -124,29 +121,81 @@ span {
 .mainbox form button:hover {
   background: #1430B8;
   color: #fff;
-  outline:0;
+  outline: 0;
   transition: background-color s ease-out;
 }
 
 #dropdown {
   width: 50%;
   padding: 0.5em;
-  border:1px solid #FBA90A;
+  border: 1px solid #FBA90A;
 }
 
-#name, #email, #number {
+#name,
+#email,
+#number {
   width: 100%;
   padding: 0.5em;
-  border:1px solid rgb(204, 214, 224);
+  border: 1px solid rgb(204, 214, 224);
   justify-self: flex-start;
 }
 
-#name-label, #email-label, #number-label {
+#name-label,
+#email-label,
+#number-label {
   justify-self: flex-start;
 }
 
-.my_signature{
-  color:#00308F;
-  font-family:Orbitron;
-  font-weight:bold;
+.responsive_case {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.my_signature {
+  color: #00308F;
+  font-family: Orbitron;
+  font-weight: bold;
+}
+
+/* FOR MOBILES SCREENS */
+
+@media(max-width:700px) {
+  .wrapmaincontainer1 {
+    max-width: auto;
+  }
+  .columngrid {
+    display: inline;
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .responsive_case {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainbox form button {
+    width: 50%;
+    padding: 1em;
+    border-radius: 3px;
+    background-color: #FBA90A;
+    font-weight: bold;
+  }
+}
+
+@media(max-width:500px) {
+  
+  body {
+    padding: 1em;
+  }
+
+  .container {
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+  }
+
+  .wrapmaincontainer1 {
+    max-width: 100%;
+   }
 }

@@ -12,11 +12,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron"rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
   <link href="Sports_Survey.css" rel="stylesheet" type="text/css">
 
-  <title>Form for FCC</title>
+  <title>Sports Survey Project for FCC</title>
 </head>
 
 <!--CODING STARTS HERE -->
@@ -31,7 +31,9 @@
 
     <div class="wrap animated bounceInUp">
       <div id="esbox">
-        <p id="description">Please let us know about your <span>sport habits</span></p>
+        <p id="description">Please let us know about your
+          <span>sport habits</span>
+        </p>
       </div>
 
       <!-- MAIN BOX  -->
@@ -60,7 +62,6 @@
             <h4>Please select your gender</h4>
             <select id="dropdown">
               <option="disabled value">Choose an option</option>
-                <!--CHECK THIS WORKS LATER-->
                 <option value="1">Male</option>
                 <option value="2">Female</option>
                 <option value="0">don´t want to say</option>
@@ -70,6 +71,7 @@
           <!--RADIO BUTTON -->
           <div>
             <h4>What kind of sport do you like to practice?</h4>
+
             <div class="wrapmaincontainer1">
               <div class="columngrid">
                 <div class="container1">
@@ -103,21 +105,33 @@
                   </div>
                 </div>
 
+
               </div>
             </div>
-            <!-- SECOND SET OF RADIO BUTTONS -->
-            <div>
-              <h4>How often do you practice per week?</h4>
-              <input type="checkbox" name="sport-freq" value="1" id="af" checked>
-              <label for="a">1 time </label>
-              <input type="checkbox" name="sport-freq" value="2" id="bf">
-              <label for="b">2-3 times </label>
-              <input type="checkbox" name="sport-freq" value="3" id="cf">
-              <label for="c">4-5 times </label>
-              <input type="checkbox" name="sport-freq" value="4" id="df">
-              <label for="c">everyday</label>
+          </div>
+          <!-- SECOND SET OF RADIO BUTTONS -->
+          <div>
+            <h4>How often do you practice per week?</h4>
+            <div class="responsive_case">
+              <div>
+                <input type="checkbox" name="sport-freq" value="1" id="af" checked>
+                <label for="a">0-1 times </label>
+              </div>
+              <div>
+                <input type="checkbox" name="sport-freq" value="2" id="bf">
+                <label for="b">2-3 times </label>
+              </div>
+              <div>
+                <input type="checkbox" name="sport-freq" value="3" id="cf">
+                <label for="c">4-5 times </label>
+              </div>
+              <div>
+                <input type="checkbox" name="sport-freq" value="4" id="df">
+                <label for="c">every day</label>
+              </div>
             </div>
           </div>
+
 
           <!-- TEXT ARE-->
           <div>
@@ -127,8 +141,10 @@
 
           <!-- SUBMIT BUTTON -->
           <div>
-             
-            <button style="font-size:1em"  type="submit" id="submit" value="submit_all">Submit <i class="fa fa-soccer-ball-o" style="font-size:1.5em" ></i></button>
+
+            <button style="font-size:1em" type="submit" id="submit" value="submit_all">Submit
+              <i class="fa fa-soccer-ball-o" style="font-size:1.5em"></i>
+            </button>
           </div>
 
         </form>
@@ -136,21 +152,32 @@
     </div>
   </div>
 
+
+
+
   <!-- END -->
   <div>
-    <span>Happily coded by:</span> <span class="my_signature"><br>Manuel Martín<br> 
-      <div><a id = "github_manuel_martin" href = "https://github.com/manuman79/" target = "_blank"><i class="fa fa-github" style="font-size:36px"></i></a></div>
-      
+    <span>Happily coded by:</span>
+    <span class="my_signature">
+      <br>Manuel Martín
+      <br>
+      <div>
+        <a id="github_manuel_martin" href="https://github.com/manuman79/" target="_blank">
+          <i class="fa fa-github" style="font-size:36px"></i>
+        </a>
+      </div>
+
   </div>
   <div>
-  </p><b>using: </p>
-      <i class="fa fa-html5" style="font-size:4vw; color:red"></i>
-      <i class="fa fa-css3" style="font-size:4vw;color:blue"></i>
-      <i class="fa fa-bold" style="font-size:4vw;color:violet"></i>
+    <p>
+      <b>using: </p>
+    <i class="fa fa-html5" style="font-size:3em; color:red"></i>
+    <i class="fa fa-css3" style="font-size:3em;color:blue"></i>
+    <i class="fa fa-bold" style="font-size:3em;color:violet"></i>
 
   </div>
 
-</div>
+  </div>
 
 </body>
 
